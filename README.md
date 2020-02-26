@@ -1,5 +1,6 @@
 # Todo List CLI in Sync with the Cloud!
 
+<p align="center"><img src="https://github.com/breatheco-de/todo-list-cli-with-cloud/blob/master/preview.gif" width="200" /></p>
 Today you will be building a TODO list using API's to sync it with the cloud.
 
 You will practice:
