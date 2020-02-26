@@ -5,7 +5,7 @@
 	"status": "published",
 	"live-url": "",
 	"duration" : 8,
-    "solution": "https://github.com/breatheco-de/model-solution-todo-list-cli-with-cloud",
+    "solution": "https://github.com/breatheco-de/todo-list-cli-with-cloud/tree/solution",
 	"technologies": ["python", "terminal", "command line", "http", "http.request", "apis"],
 	"talents": [
 		{ "badge": "identator", "points": 10 }
