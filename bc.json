@@ -5,6 +5,7 @@
 	"status": "published",
 	"live-url": "",
 	"duration" : 8,
+	"dificulty": "junior",
     	"solution": "https://github.com/breatheco-de/exercise-todo-list-cli-with-cloud/tree/solution",
 	"technologies": ["python", "terminal", "command line", "http", "http.request", "apis"],
 	"talents": [
