@@ -11,9 +11,9 @@ You will practice:
 
 We are going to be using [BreatheCode Todo's API](https://assets.breatheco.de/apis/fake/todos/) to upload and download the TODO's, please refer to the HTTP and REST lessons as a quick background research for the project.
 
-Get todos by calling: `[GET] /todos/user/<username>`
-Initilize the todo list: `[POST] /todos/user/<username>`
-Update your todo list: `[PUT] /todos/user/<username>`
+Get todos by calling: `[GET] /todos/user/<username>`   
+Initilize the todo list: `[POST] /todos/user/<username>`  
+Update your todo list: `[PUT] /todos/user/<username>`  
 
 ## 💻 Installation
 
