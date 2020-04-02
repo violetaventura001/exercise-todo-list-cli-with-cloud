@@ -17,11 +17,34 @@ We are going to be using [BreatheCode Todo's API](https://assets.breatheco.de/ap
 
 ## 💻 Installation
 
-1. Clone this repository: `$ git clone https://github.com/breatheco-de/todo-list-cli-with-cloud`
-2. Install the dependecy packages by typing: `$ pipenv install --python 3`
-3. Get inside your virtual environment by typing: `$ pipenv shell`
-4. You can run the project by typing: `$ python src/app.py`
-5. You can also run the tests for the project: `$ python src/test.py`
+1. Clone this repository: 
+
+```sh
+$ git clone https://github.com/breatheco-de/todo-list-cli-with-cloud
+```
+
+2. Install the dependecy packages by typing: 
+
+```sh
+$ pipenv install --python 3
+```
+
+3. Get inside your virtual environment by typing: 
+
+```sh
+$ pipenv shell
+```
+
+4. You can run the project by typing: 
+
+```sh
+$ python src/app.py
+```
+5. You can also run the tests for the project: 
+
+```sh
+$ python src/test.py
+```
 
 ## 📝 Instructions
 
