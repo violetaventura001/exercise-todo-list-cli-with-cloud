@@ -1,4 +1,4 @@
-import json, requests
+import json, requests, csv
 
 todos = []
 
@@ -9,8 +9,9 @@ def add_one_task(title):
     todos.append(title)
 
 def print_list():
-    todos
-    print("These are your to-do task: \n "+str(todos))
+    r = requests.get('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
+    r = r.json()
+    print(r)
 
 def delete_task(number_to_delete):
     if number_to_delete in todos:
@@ -21,10 +22,10 @@ def delete_task(number_to_delete):
 
 def initialize_todos():
     global todos
-    r = requests.get('https://assets.breatheco.de/apis/fake/todos/user/alesanchezr') 
+    r = requests.get('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
     if(r.status_code == 404):
         print("No previous todos found, starting a new todolist")
-        r = requests.post(url = 'https://assets.breatheco.de/apis/fake/todos/user/alesanchezr', data = []) 
+        r = requests.post(url = 'https://assets.breatheco.de/apis/fake/todos/user/violetaventura001', data = []) 
         if r.status_code == 200:
             print("Tasks initialized successfully")
     else:
