@@ -6,9 +6,8 @@ def get_todos():
     return todos
 
 def add_one_task(title):
-    p = requests.post('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
-    p = p.json()
-    print(p)
+    # your code here
+    pass
 
 def print_list():
     r = requests.get('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
@@ -35,19 +34,12 @@ def initialize_todos():
         todos = r.json()
     
 def save_todos(listToUpdate):
-    with open("todos.csv","w") as csvfile:
-        csvwriter = csv.writer(csvfile, delimiter=',')
-        csvwriter.writerow(listToUpdate)
-        csvfile.close() 
-    return listToUpdate
+    # your code here
+    pass
 
 def load_todos():
-    with open('todos.csv') as csvfile:
-        csvreader = csv.reader(csvfile,delimiter=',')
-        for row in csvreader:
-            print(', '.join(row
-            ))
-        csvfile.close()
+    # your code here
+    pass
     
 # Below this code will only run if the entry file running was app.py
 if __name__ == '__main__':
