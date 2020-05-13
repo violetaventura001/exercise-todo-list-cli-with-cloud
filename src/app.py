@@ -6,7 +6,9 @@ def get_todos():
     return todos
 
 def add_one_task(title):
-    todos.append(title)
+    p = requests.post('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
+    p = p.json()
+    print(p)
 
 def print_list():
     r = requests.get('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
@@ -14,11 +16,11 @@ def print_list():
     print(r)
 
 def delete_task(number_to_delete):
-    if number_to_delete in todos:
-        todos.remove(number_to_delete)
-    else:
-        print(number_to_delete +" "+ "does not exsist in this list.")
-    return todos  
+    global todos
+    r = requests.get('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001') 
+    todos.pop(int(number_to_delete))
+    d = requests.put('https://assets.breatheco.de/apis/fake/todos/user/violetaventura001', data = [])
+    print(todos) 
 
 def initialize_todos():
     global todos
